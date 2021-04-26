@@ -1,0 +1,30 @@
+:root {
+  --primary: #d84bd8;
+  --secondary: #5785e9;
+  --tertiary: #2084d6;
+  --dark: #050404;
+  --light: #eaeaea;
+}
+
+hr {
+  border: 0.1em solid rgba(211, 209, 209, 0.5);
+}
+
+.button {
+  padding: 1rem 2rem;
+  color: var(--secondary);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.button__type--danger {
+  background-color: rgb(199, 26, 26);
+  color: white;
+}
+
+.button__type--info {
+  background-color: rgb(44, 188, 255);
+  color: white;
+}

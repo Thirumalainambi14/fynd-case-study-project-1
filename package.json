@@ -1,0 +1,22 @@
+{
+  "name": "case-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --mount=/:public --open=/ --entry-file=index.html",
+    "copy": "cpx \"node_modules/{@fortawesome/fontawesome-free,normalize.css}/**/*\" public/external"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "normalize.css": "^8.0.1"
+  }
+}

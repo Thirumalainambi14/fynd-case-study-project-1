@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting</title>
+  <link rel="stylesheet" href="css/global/App.css">
+  <link rel="stylesheet" href="css/global/navbar.css">
+  <link rel="stylesheet" href="css/utils/utils.css">
+  <link rel="stylesheet" href="css/meeting/filter.css">
+
+</head>
+
+<body>
+
+  <nav class="calender__navbar">
+    <div class="calender__container">
+      <h1 class="calender__navbar--title">MyMeetings</h1>
+
+      <button class="calender__navbar--icon">
+        <div class="calender__navbar--bar"></div>
+      </button>
+      <div class="calender__menu">
+        <ul class="calender__menu--list">
+          <a href="#">
+            <li>Calender</li>
+          </a>
+          <a href="#" class="active">
+            <li>Meeting</li>
+          </a>
+          <a href="#">
+            <li>Teams</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="calender__user">
+        <div class="calender__user--info">
+          <span class="calender__user--greet">Hello,</span>
+          <span class="calender__user--email">
+            Jane.doe@example.com!
+          </span>
+        </div>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <header class="main__header">
+      Meetings
+    </header>
+    <hr />
+
+    <section class="meetings">
+      <div class="meetings__tab">
+        <div class="meeting__tab--active">
+          <span>
+            Filter/Seach meetings
+          </span>
+        </div>
+        <div class="meeting__tab--item">
+          <span>
+            Add a meeting
+          </span>
+        </div>
+      </div>
+
+      <div class="meeting__search--section">
+        <h1>Search for meetings</h1>
+
+        <div class="meeting__dropdown">
+          <label for="date">Date</label>
+          <select name="date" id="date">
+            <option value="all">ALL</option>
+            <option value="past">PAST</option>
+            <option value="today">TODAY</option>
+            <option value="upcoming">UPCOMING</option>
+          </select>
+        </div>
+
+        <div class="meeting__search">
+          <label for="search">Search for</label>
+          <textarea name="search" id="search" cols="30" rows="3"
+            placeholder="Search using words which describe the meeting"></textarea>
+        </div>
+
+        <input type="submit" class="button button__type--search" value="Search">
+      </div>
+    </section>
+
+    <header class="main__header">
+      Meeting matching search criteria
+    </header>
+    <hr />
+
+    <section class="main__search--results">
+      <div class="search__container">
+        <h2 class="search__time-date">23 April 2021</h2>
+        <span class="search__time-data">06:00 - 07:00</span>
+        <span class="search__subhead">Project kickoff</span>
+        <button class="button button__type--danger">Excuse yourself</button>
+      </div>
+      <hr>
+
+      <footer class="search__footer">
+        <div class="search__footer--main">
+          <span class="search__attendees">Attendees: </span>
+          <span class="search__attendees--email">mark@example.com, thirumalainambi345@example.com</span>
+
+        </div>
+
+        <select name="member" id="member">
+          <option value="" disable>Select a member</option>
+          <option value="thirumalai@example.com">thirumalai@example.com</option>
+          <option value="mark@example.com">mark@example.com</option>
+        </select>
+        <button class="button button__type--info">Add</button>
+      </footer>
+    </section>
+
+    <section class="main__search--results">
+      <div class="search__container">
+        <h2 class="search__time-date">23 April 2021</h2>
+        <span class="search__time-data">06:00 - 07:00</span>
+        <span class="search__subhead">Project kickoff</span>
+        <button class="button button__type--danger">Excuse yourself</button>
+      </div>
+      <hr>
+
+      <footer class="search__footer">
+        <div class="search__footer--main">
+          <span class="search__attendees">Attendees: </span>
+          <span class="search__attendees--email">mark@example.com, thirumalainambi345@example.com</span>
+
+        </div>
+
+        <select name="member" id="member">
+          <option value="" disable>Select a member</option>
+          <option value="thirumalai@example.com">thirumalai@example.com</option>
+          <option value="mark@example.com">mark@example.com</option>
+        </select>
+        <button class="button button__type--info">Add</button>
+      </footer>
+    </section>
+
+    <section class="main__search--results">
+      <div class="search__container">
+        <h2 class="search__time-date">23 April 2021</h2>
+        <span class="search__time-data">06:00 - 07:00</span>
+        <span class="search__subhead">Project kickoff</span>
+        <button class="button button__type--danger">Excuse yourself</button>
+      </div>
+      <hr>
+
+      <footer class="search__footer">
+        <div class="search__footer--main">
+          <span class="search__attendees">Attendees: </span>
+          <span class="search__attendees--email">mark@example.com, thirumalainambi345@example.com</span>
+
+        </div>
+
+        <select name="member" id="member">
+          <option value="" disable>Select a member</option>
+          <option value="thirumalai@example.com">thirumalai@example.com</option>
+          <option value="mark@example.com">mark@example.com</option>
+        </select>
+        <button class="button button__type--info">Add</button>
+      </footer>
+    </section>
+  </main>
+
+</body>
+
+</html>
