@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
   height: 100%;
   /* padding: 1rem; */
@@ -238,9 +238,19 @@ section .color:nth-child(3) {
   body {
     overflow: hidden;
     width: 100%;
+    height: 100vh;
   }
 
   section {
     overflow: hidden;
+  }
+
+  .box .square,
+  .box .circle,
+  .color {
+    display: none;
+  }
+  .container {
+    padding: 1rem;
   }
 }

@@ -17,19 +17,22 @@
   <nav class="calender__navbar">
     <div class="calender__container">
       <h1 class="calender__navbar--title">MyMeetings</h1>
+      <label for="check" class="check__navbar">
+        <div class="calender__navbar--icon">
+          <div class="calender__navbar--bar"></div>
+        </div>
 
-      <button class="calender__navbar--icon">
-        <div class="calender__navbar--bar"></div>
-      </button>
+      </label>
+      <input type="checkbox" class="nav__check" name="check" id="check">
       <div class="calender__menu">
         <ul class="calender__menu--list">
-          <a href="#">
+          <a href="/calender_page.html">
             <li>Calender</li>
           </a>
-          <a href="#" class="active">
+          <a href="/meeting_page_filter.html" class="active">
             <li>Meeting</li>
           </a>
-          <a href="#">
+          <a href="/teams.html">
             <li>Teams</li>
           </a>
         </ul>
@@ -42,7 +45,7 @@
             Jane.doe@example.com!
           </span>
         </div>
-        <a href="#">Logout</a>
+        <a href="/">Logout</a>
       </div>
     </div>
   </nav>
@@ -57,16 +60,16 @@
       <div class="meetings__tab">
 
         <div class="meeting__tab--item-1">
-          <a href="#" class="meetings__link-1">
-            <span>
+          <a href="/meeting_page_filter.html" class="meetings__link-1">
+            <span title="Filter/Search Meetings">
               Filter/Seach meetings
             </span>
           </a>
         </div>
         <div class="meeting__tab--active ">
-          <a href="#" class="meetings__link-2">
+          <a href="/meeting_page_add.html" class="meetings__link-2">
 
-            <span>
+            <span title="Add a meeting">
               Add a meeting
             </span>
           </a>

@@ -10,7 +10,7 @@
 
 .meeting__tab--active {
   text-align: center;
-  width: 18%;
+  width: 33%;
   font-size: 1.6rem;
   border: 1px solid rgba(109, 108, 108, 0.3);
   border-radius: 4px 4px 0 0;
@@ -18,8 +18,14 @@
   padding: 1rem 2rem;
   font-weight: bold;
   letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .meeting__tab--item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 82%;
   padding: 1rem 2rem;
   font-size: 1.6rem;

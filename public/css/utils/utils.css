@@ -57,3 +57,11 @@ hr {
   font-weight: bold;
   border: none;
 }
+
+.meetings__link-1 {
+  color: rgb(0, 132, 255);
+}
+
+.meetings__link-2 {
+  color: black;
+}

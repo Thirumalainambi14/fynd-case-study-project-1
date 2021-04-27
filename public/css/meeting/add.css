@@ -9,15 +9,10 @@
   align-items: center;
 }
 
-.meetings__link-1 {
-  color: rgb(0, 132, 255);
-}
-
-.meetings__link-2 {
-  color: black;
-}
-
 .meeting__tab--active {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   position: relative;
   text-align: center;
   width: 18%;
@@ -38,6 +33,9 @@
 }
 
 .meetings__tab .meeting__tab--item-1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 18%;
   padding: 1rem 2rem;
   font-size: 1.6rem;
@@ -96,12 +94,12 @@ label {
   margin: 0.3rem 0;
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 30%;
 }
 
 .meeting__time input[type="number"] {
   padding: 1rem 0 1rem 1rem;
-  width: 20%;
+  width: 100%;
   border: none;
   border-radius: 3px;
 }
@@ -130,4 +128,32 @@ label {
   font-size: 1.2rem;
   letter-spacing: 1px;
   margin: 0.5rem 0;
+}
+
+@media all and (max-width: 900px) {
+  .nav__check:checked ~ .calender__user {
+    z-index: 2;
+
+    border-top: 1px solid rgb(255, 243, 243);
+    position: absolute;
+    bottom: -430%;
+    width: 70vw;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.8rem 0;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .meeting__time {
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+    width: 30%;
+  }
+  .meeting__time input[type="number"] {
+    width: 100%;
+  }
 }
