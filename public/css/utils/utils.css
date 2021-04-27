@@ -28,3 +28,32 @@ hr {
   background-color: rgb(44, 188, 255);
   color: white;
 }
+
+.button__type--search {
+  width: max-content;
+  margin: 1rem 0 0;
+  padding: 0.9rem;
+  background-color: rgb(44, 188, 255);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.button__type--danger {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.5rem;
+  letter-spacing: 0;
+  width: max-content;
+  font-weight: bold;
+  border: none;
+}
+
+.button__type--info {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  letter-spacing: 0;
+  width: max-content;
+  font-weight: bold;
+  border: none;
+}

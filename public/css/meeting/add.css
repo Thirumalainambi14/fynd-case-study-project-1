@@ -1,14 +1,24 @@
 .meetings {
   margin: 2rem 0;
+  position: relative;
 }
 
 .meetings__tab {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+.meetings__link-1 {
+  color: rgb(0, 132, 255);
+}
+
+.meetings__link-2 {
+  color: black;
+}
+
 .meeting__tab--active {
+  position: relative;
   text-align: center;
   width: 18%;
   font-size: 1.6rem;
@@ -19,13 +29,20 @@
   font-weight: bold;
   letter-spacing: 1px;
 }
-.meeting__tab--item {
-  width: 82%;
+.dummy__border {
+  position: absolute;
+  bottom: 0;
+  width: 64%;
+  right: 0;
+  border-bottom: 1px solid rgba(109, 108, 108, 0.3);
+}
+
+.meetings__tab .meeting__tab--item-1 {
+  width: 18%;
   padding: 1rem 2rem;
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 1px;
-  color: rgb(0, 132, 255);
   border-bottom: 1px solid rgba(109, 108, 108, 0.3);
 }
 
@@ -47,22 +64,21 @@
   margin-bottom: 1rem;
 }
 
-.meeting__dropdown {
+.meeting__date {
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
 }
 
-.meeting__dropdown label,
-.meeting__search label {
+label {
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0.3rem 0;
 }
 
-.meeting__dropdown select,
-.meeting__search textarea {
+.meeting__date input[type="date"],
+.meeting__description textarea {
   width: 100%;
   padding: 0.5rem 0 0.5rem 0.5rem;
   border: none;
@@ -70,52 +86,48 @@
   background-color: white;
 }
 
-.main__search--results {
-  border-radius: 3px;
+.meeting__end-time,
+.meeting__start-time,
+.meeting__description {
   margin: 1rem 0;
+}
+
+.meeting__time {
+  margin: 0.3rem 0;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid rgb(201, 197, 197);
-  padding: 1rem;
+  align-items: center;
+  width: 20%;
 }
 
-.search__container {
-  margin: 0 0 1rem 0;
+.meeting__time input[type="number"] {
+  padding: 1rem 0 1rem 1rem;
+  width: 20%;
+  border: none;
+  border-radius: 3px;
 }
 
-.search__container h2 {
-  font-size: 1.6rem;
-  letter-spacing: 1.3px;
-  display: inline-block;
-}
-
-.search__container .search__time-data {
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-
-.search__container .search__subhead {
-  margin: 0.4rem 0;
-  font-weight: 500;
-  display: block;
-  font-size: 1.2rem;
-}
-
-.search__footer {
-  margin: 1rem 0;
-}
-.search__footer--main .search__attendees {
+.meeting__time span {
+  margin: 0 1rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-.search__footer--main .search__attendees--email {
-  font-size: 1.3rem;
+.meeting__description textarea {
+  margin: 0.3rem 0;
 }
 
-.search__footer select {
-  width: 10%;
-  margin: 1rem 1rem 0 0;
-  padding: 0.2rem 0 0 0.1rem;
+.meeting__email input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.meeting__email span {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 0.5rem 0;
 }
