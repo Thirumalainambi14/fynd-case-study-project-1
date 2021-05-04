@@ -147,6 +147,16 @@ label {
 }
 
 @media all and (max-width: 900px) {
+  .meetings__tab .meeting__tab--item-1 {
+    width: 50%;
+  }
+  .meeting__tab--active {
+    width: 50%;
+  }
+  .dummy__border {
+    display: none;
+  }
+
   .meeting__time {
     margin: 0.3rem 0;
     display: flex;

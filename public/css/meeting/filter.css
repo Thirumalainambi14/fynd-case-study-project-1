@@ -133,3 +133,12 @@
   margin: 1rem 1rem 0 0;
   padding: 0.2rem 0 0 0.1rem;
 }
+
+@media all and (max-width: 900px) {
+  .meeting__tab--item {
+    width: 50%;
+  }
+  .meeting__tab--active {
+    width: 50%;
+  }
+}
