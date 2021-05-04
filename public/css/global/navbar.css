@@ -79,8 +79,8 @@
   display: flex;
   justify-content: space-between;
   color: var(--dark);
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .calender__menu--list a:hover,

@@ -77,24 +77,25 @@
 
       <div class="meeting__search--section">
         <h1>Search for meetings</h1>
+        <form action="">
+          <div class="meeting__dropdown">
+            <label for="date">Date</label>
+            <select name="date" id="date">
+              <option value="all">ALL</option>
+              <option value="past">PAST</option>
+              <option value="today">TODAY</option>
+              <option value="upcoming">UPCOMING</option>
+            </select>
+          </div>
 
-        <div class="meeting__dropdown">
-          <label for="date">Date</label>
-          <select name="date" id="date">
-            <option value="all">ALL</option>
-            <option value="past">PAST</option>
-            <option value="today">TODAY</option>
-            <option value="upcoming">UPCOMING</option>
-          </select>
-        </div>
+          <div class="meeting__search">
+            <label for="search">Search for</label>
+            <textarea name="search" id="search" cols="30" rows="3"
+              placeholder="Search using words which describe the meeting"></textarea>
+          </div>
 
-        <div class="meeting__search">
-          <label for="search">Search for</label>
-          <textarea name="search" id="search" cols="30" rows="3"
-            placeholder="Search using words which describe the meeting"></textarea>
-        </div>
-
-        <input type="submit" class="button button__type--search" value="Search">
+          <input type="submit" class="button button__type--search" value="Search">
+        </form>
       </div>
     </section>
 

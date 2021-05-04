@@ -79,47 +79,48 @@
 
       <div class="meeting__search--section">
         <h1>Add a new meeting</h1>
-
-        <div class="meeting__date">
-          <label for="date">Date</label>
-          <input type="date" name="date" id="date">
-        </div>
-
-        <div class="meeting__start-time">
-          <label for="shh">Start time (hh:mm)</label>
-          <div class="meeting__time">
-            <input type="number" min="0" max="23" name="shh" id="shh" value="0">
-            <span>:</span>
-            <input type="number" min="0" max="59" name="smm" id="smm" value="0">
+        <form action="">
+          <div class="meeting__date">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
           </div>
-        </div>
 
-        <div class="meeting__end-time">
-          <label for="ehh">End time (hh:mm)</label>
-          <div class="meeting__time">
-            <input type="number" min="0" max="23" name="ehh" id="ehh" value="0"> <span>:</span>
-
-            <input type="number" min="0" max="59" name="emm" id="emm" value="0">
+          <div class="meeting__start-time">
+            <label for="shh">Start time (hh:mm)</label>
+            <div class="meeting__time">
+              <input type="number" min="0" max="23" name="shh" id="shh" value="0">
+              <span>:</span>
+              <input type="number" min="0" max="59" name="smm" id="smm" value="0">
+            </div>
           </div>
-        </div>
 
-        <div class="meeting__description">
-          <label for="description">Description</label>
-          <textarea name="description" id="description" cols="10" rows="4"
-            placeholder="What is agenda of the meeting?"></textarea>
-        </div>
+          <div class="meeting__end-time">
+            <label for="ehh">End time (hh:mm)</label>
+            <div class="meeting__time">
+              <input type="number" min="0" max="23" name="ehh" id="ehh" value="0"> <span>:</span>
 
-        <div class="meeting__email">
-          <label for="email-attendees">EmailIDs of attendees, or team's short</label>
-          <input type="text" name="emailAttendees" id="email-attendees"
-            placeholder="john@example.com, @annual-day, mark@example.com">
-          <span>
-            Separate emailIds / team short names by commas - team short names always begins with @
-          </span>
-        </div>
+              <input type="number" min="0" max="59" name="emm" id="emm" value="0">
+            </div>
+          </div>
+
+          <div class="meeting__description">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="10" rows="4"
+              placeholder="What is agenda of the meeting?"></textarea>
+          </div>
+
+          <div class="meeting__email">
+            <label for="email-attendees">EmailIDs of attendees, or team's short</label>
+            <input type="text" name="emailAttendees" id="email-attendees"
+              placeholder="john@example.com, @annual-day, mark@example.com">
+            <span>
+              Separate emailIds / team short names by commas - team short names always begins with @
+            </span>
+          </div>
 
 
-        <input type="submit" class="button button__type--search" value="Add Meeting">
+          <input type="submit" class="button button__type--search" value="Add Meeting">
+        </form>
       </div>
     </section>
 
