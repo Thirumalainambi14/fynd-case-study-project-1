@@ -1,6 +1,7 @@
 .calender__navbar--title {
   display: none;
 }
+
 .nav__check {
   display: none;
 }
@@ -113,7 +114,123 @@
   margin-bottom: 1rem;
 }
 
+.main__calender--section {
+  margin-top: 2%;
+}
+.calender__section--datetime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calender__day {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calender__day .date {
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+}
+
+.calender__day .day {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 1px;
+  color: rgb(116, 115, 115);
+}
+
+.calender__input--date {
+  width: 16%;
+}
+
+.calender__input--date input[type="date"] {
+  width: 100%;
+  padding: 0.3rem 1rem;
+  border: 1px solid lightgray;
+}
+
+.calender__schedule {
+  margin: 1rem 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.calender__block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+.calender__block .count {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.calender__block .calender__block--meet {
+  max-width: 95%;
+  width: 98%;
+  background-color: rgb(19, 128, 128);
+  height: 4rem;
+}
+
+.calender__meet--details {
+  position: absolute;
+  right: 5%;
+  width: 88%;
+  max-width: 88%;
+
+  background-color: rgb(240, 237, 237);
+}
+
+.calender__meet--details h2 {
+  font-size: 1.5rem;
+  max-width: 99%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(100, 99, 99);
+}
+.calender__meet--details p {
+  max-width: 99%;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+}
+
+.calender__meet--details-1 {
+  top: 0.3%;
+  height: 5%;
+}
+
+.calender__meet--details-2 {
+  top: 13%;
+}
+
 @media all and (max-width: 900px) {
+  .calender__container {
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+  }
+  .calender__navbar--title {
+    display: inline-block;
+    font-size: 2.3rem;
+  }
+  .calender__navbar--icon {
+    border: 1px solid lightgray;
+  }
+  .calender__navbar--icon,
+  .calender__navbar--bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   .check__navbar {
     width: 100%;
     height: 100%;
@@ -157,7 +274,7 @@
 
     border-top: 1px solid rgb(255, 243, 243);
     position: absolute;
-    bottom: -490%;
+    bottom: -610%;
     width: 70vw;
     background-color: lightgray;
     display: flex;
