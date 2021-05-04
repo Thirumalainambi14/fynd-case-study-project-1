@@ -79,8 +79,8 @@
   display: flex;
   justify-content: space-between;
   color: var(--dark);
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  /* font-weight: 600; */
   letter-spacing: 2px;
   padding: 1.5rem 2rem;
 }
