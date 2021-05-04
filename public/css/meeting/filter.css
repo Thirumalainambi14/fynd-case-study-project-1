@@ -20,7 +20,12 @@
   letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;
+
   text-overflow: ellipsis;
+}
+
+.meeting__tab--active a {
+  color: black;
 }
 .meeting__tab--item {
   white-space: nowrap;
@@ -31,8 +36,11 @@
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 1px;
-  color: rgb(0, 132, 255);
   border-bottom: 1px solid rgba(109, 108, 108, 0.3);
+}
+
+.meeting__tab--item a {
+  color: rgb(0, 132, 255);
 }
 
 .meeting__search--section {

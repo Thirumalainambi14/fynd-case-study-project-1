@@ -15,7 +15,7 @@
   text-overflow: ellipsis;
   position: relative;
   text-align: center;
-  width: 18%;
+  width: 22%;
   font-size: 1.6rem;
   border: 1px solid rgba(109, 108, 108, 0.3);
   border-radius: 4px 4px 0 0;
@@ -27,7 +27,7 @@
 .dummy__border {
   position: absolute;
   bottom: 0;
-  width: 64%;
+  width: 56%;
   right: 0;
   border-bottom: 1px solid rgba(109, 108, 108, 0.3);
 }
@@ -36,7 +36,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 18%;
+  width: 22%;
   padding: 1rem 2rem;
   font-size: 1.6rem;
   font-weight: bold;

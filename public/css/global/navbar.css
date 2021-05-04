@@ -179,6 +179,7 @@
   right: 5%;
   width: 88%;
   max-width: 88%;
+
   background-color: rgb(240, 237, 237);
 }
 
@@ -196,10 +197,11 @@
 
 .calender__meet--details-1 {
   top: 0.3%;
+  height: 5%;
 }
 
 .calender__meet--details-2 {
-  top: 10%;
+  top: 13%;
 }
 
 @media all and (max-width: 900px) {
